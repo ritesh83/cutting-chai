@@ -33,5 +33,9 @@
     "url": "git://github.com/keswanir/cutting-chai.git"
   },
   "author": "keswanir",
-  "license": ""
+  "license": "",
+  "devDependencies": {
+    "object-assign": "^4.1.0",
+    "stripe": "^4.14.0"
+  }
 }
