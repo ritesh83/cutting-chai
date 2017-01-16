@@ -10,7 +10,7 @@ var stripe = require('stripe')('sk_test_DWszSpRh3qUBF84Agavemurc');
 module.exports = {
 
 	create: function (req, res) {
-		return stripe.charges.create(
+		 stripe.charges.create(
 			{
 			  	amount: 1000,
 			  	currency: 'usd',
@@ -18,7 +18,15 @@ module.exports = {
 			  	source: req.param('token'),
 			},
 			function(err, charge) {
-			  	return res.json({charge: charge});
+				Payment.create({transaction:charge.id}).exec(function (err) {
+				    if (err) {
+					    return res.serverError(err);
+				    }
+
+				    return res.ok();
+				});
+
+				return res.json({charge: charge});
 			}
 		);
     }
