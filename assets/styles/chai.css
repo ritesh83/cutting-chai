@@ -38,3 +38,23 @@ body {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+
+.menu-item {
+    border: solid 1px gray;
+    background-color: rgba(86, 83, 83, 0.5);;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.title {
+    text-align: center;
+}
+
+.menu-item-image {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.menu-item-title {
+    margin-top: 15px;
+}

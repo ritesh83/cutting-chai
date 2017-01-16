@@ -23,9 +23,11 @@ module.exports = {
    * `MenuController.get()`
    */
   get: function (req, res) {
-    return res.json({
-      todo: 'get() is not implemented yet!'
-    });
+	  Menu.find().exec(function(err, allItems) {
+		  return res.json({
+			items: allItems
+		  });
+	  });
   },
 
 

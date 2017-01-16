@@ -36,6 +36,10 @@ module.exports.routes = {
     view: 'homepage'
   },
 
+  '/menu': {
+      view: 'menupage'
+  },
+
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *
@@ -45,5 +49,5 @@ module.exports.routes = {
   * for configuration options and examples.                                  *
   *                                                                          *
   ***************************************************************************/
-  'GET /menu': 'MenuController.get'
+  'GET /api/menu': 'MenuController.get'
 };
