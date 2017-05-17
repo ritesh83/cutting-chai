@@ -21,13 +21,25 @@ form {
     }
 }
 
+.header-jumbo {
+    background: linear-gradient(150deg, #f9f5f5 0%, rgb(199, 194, 194) 51%, #f7f5f5 75%);
+}
+
 body {
-    background: url('/images/cutting-chai-2.jpg');
+    /*background: url('/images/cutting-chai-2.jpg');*/
     color: #dbe1e6 !important;
     background-position: 50% 0%;
-    background-color: black !important;
+    background-color: white !important;
     background-repeat: no-repeat;
-    margin-top: 50px !important;
+    font-family: fantasy;
+    /*background: linear-gradient(141deg, #1099da 0%, #76a8bf 51%, #2cb5e8 75%);*/
+}
+
+.add-to-cart {
+    padding: 9px 12px 3px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    width: 100%;
 }
 
 .date-input {
@@ -41,7 +53,7 @@ body {
 
 .menu-item {
     border: solid 1px gray;
-    background-color: rgba(86, 83, 83, 0.5);;
+    color: #7d1717;
     margin-top: 15px;
     margin-bottom: 15px;
 }
@@ -53,6 +65,8 @@ body {
 .menu-item-image {
     margin-top: 15px;
     margin-bottom: 15px;
+    width: 100%;
+    height: auto;
 }
 
 .menu-item-title {

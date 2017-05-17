@@ -40,6 +40,10 @@ module.exports.routes = {
       view: 'menupage'
   },
 
+  '/cart': {
+      view: 'cartpage'
+  },
+
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *

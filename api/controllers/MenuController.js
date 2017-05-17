@@ -6,8 +6,6 @@
  */
 
 module.exports = {
-	
-
 
   /**
    * `MenuController.create()`
@@ -17,7 +15,6 @@ module.exports = {
       todo: 'create() is not implemented yet!'
     });
   },
-
 
   /**
    * `MenuController.get()`
@@ -30,7 +27,6 @@ module.exports = {
 	  });
   },
 
-
   /**
    * `MenuController.update()`
    */
@@ -39,7 +35,6 @@ module.exports = {
       todo: 'update() is not implemented yet!'
     });
   },
-
 
   /**
    * `MenuController.delete()`
@@ -50,4 +45,3 @@ module.exports = {
     });
   }
 };
-
