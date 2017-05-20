@@ -8,8 +8,7 @@
 }
 
 form {
-    background-color: rgba(72, 67, 67, 0.5);
-    margin-top: 20px;
+    color: black;
 }
 
 @media screen and (min-width: 480px) {
@@ -55,6 +54,10 @@ form {
     padding: 9px 5px 0px;
 }
 
+a, a:hover, a:active, a:visited, a:focus {
+    text-decoration:none;
+}
+
 .header .cart-button {
     float:right;
     margin: 10px 0px;
@@ -67,7 +70,7 @@ form {
 
 body {
     /*background: url('/images/cutting-chai-2.jpg');*/
-    color: #dbe1e6 !important;
+    color: #dbe1e6;
     background-position: 50% 0%;
     background-color: white !important;
     background-repeat: no-repeat;

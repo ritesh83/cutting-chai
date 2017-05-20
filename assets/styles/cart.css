@@ -46,6 +46,7 @@ body {
   position: relative;
   padding-top: 30px;
   margin-right: 60px;
+  color: black;
 }
 .delete-btn,
 .like-btn {
@@ -115,6 +116,12 @@ body {
   padding-top: 20px;
   margin-right: 60px;
 }
+
+.quantity button {
+    height: 32px;
+    color: black;
+}
+
 .quantity input {
   -webkit-appearance: none;
   border: none;
@@ -169,6 +176,6 @@ input:focus {
     margin: 6px 0;
   }
   .buttons {
-    margin-right: 20px;
+    margin-right: 0px;
   }
 }
