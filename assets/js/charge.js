@@ -12,7 +12,7 @@ function submitForm() {
 }
 
 function stripeResponseHandler(status, response) {
-    let $form = $('#payment-form');
+    var $form = $('#payment-form');
 
     if (response.error) {
         // Show the errors on the form
@@ -21,7 +21,7 @@ function stripeResponseHandler(status, response) {
         $form.find('.payment-errors').text('');
 
         // Get the token ID:
-        let token = response.id;
+        var token = response.id;
 
         $.post('/payment',
             {'token' : token},
