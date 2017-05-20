@@ -33,11 +33,11 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': {
-    view: 'homepage'
+    view: 'menupage'
   },
 
-  '/menu': {
-      view: 'menupage'
+  '/checkout': {
+      view: 'checkout'
   },
 
   '/cart': {
