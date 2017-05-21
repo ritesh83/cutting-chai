@@ -40,9 +40,7 @@ module.exports.routes = {
       view: 'checkout'
   },
 
-  '/cart': {
-      view: 'cartpage'
-  },
+  '/cart': 'CartController.getAll',
 
   /***************************************************************************
   *                                                                          *
