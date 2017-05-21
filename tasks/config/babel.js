@@ -16,16 +16,17 @@
  */
 module.exports = function(grunt) {
 
-  grunt.config.set('concat', {
-    js: {
-      src: '.tmp/public/concat/production.js',
-      dest: '.tmp/public/concat/production.js'
-    },
-    css: {
-      src: require('../pipeline').cssFilesToInject,
-      dest: '.tmp/public/concat/production.css'
-    }
+  grunt.config.set('babel', {
+      options: {
+          sourceMap: true,
+          presets: ['es2015']
+      },
+      dist: {
+          files: {
+              '.tmp/public/concat/production.js': require('../pipeline').jsFilesToInject
+          }
+      }
   });
 
-  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-babel');
 };

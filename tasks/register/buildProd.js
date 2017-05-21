@@ -18,6 +18,7 @@
 module.exports = function(grunt) {
   grunt.registerTask('buildProd', [
     'compileAssets',
+    'babel',
     'concat',
     'uglify',
     'cssmin',
@@ -26,4 +27,3 @@ module.exports = function(grunt) {
     'copy:build'
   ]);
 };
-
