@@ -7,10 +7,6 @@
     <!-- Products -->
     <% _.each(items, function (item) { %>
         <div class="item col-xs-12">
-            <div class="buttons col-xs-12 col-sm-1">
-                <span class="glyphicon glyphicon-trash"></span>
-            </div>
-
             <div class="image col-xs-12 col-sm-3">
                 <img src="/images/<%=item.image%>" style="width:100%; height:100%"/>
             </div>
@@ -25,9 +21,14 @@
                 <input type="text" name="name" value="<%= item.quantity %>" />
                 <button class="glyphicon glyphicon-minus" type="button" name="button">
                 </button>
+
             </div>
 
             <div class="total-price col-xs-12 col-sm-1">$<%=item.price%></div>
+
+            <div class="buttons col-xs-12 col-sm-1">
+                <span class="glyphicon glyphicon-remove" style="margin-top:-2px"></span>
+            </div>
       </div>
     <% }) %>
 
