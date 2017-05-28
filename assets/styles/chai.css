@@ -77,7 +77,7 @@ body {
     /*background: linear-gradient(141deg, #1099da 0%, #76a8bf 51%, #2cb5e8 75%);*/
 
     background-image:url('/images/ice-cream-6-pack.jpg');
-    
+
     background-size: cover;
 }
 
@@ -99,7 +99,7 @@ body {
 
 .menu-item {
     border: solid 1px gray;
-    color: #7d1717;
+    color: white;
     margin-top: 15px;
     margin-bottom: 15px;
 }

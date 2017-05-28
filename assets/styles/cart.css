@@ -21,7 +21,7 @@ body {
   height: 60px;
   border-bottom: 1px solid #E1E8EE;
   padding: 20px 30px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
 }
 
@@ -89,7 +89,7 @@ body {
 
 .description span {
   display: block;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 400;
 }
 
