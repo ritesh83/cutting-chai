@@ -1,47 +1,43 @@
 <div class="col-xs-12">
-<div class="shopping-cart">
-    <!-- Title -->
-    <div class="title col-xs-12">
-        Shopping Cart
-    </div>
+    <div class="shopping-cart">
+        <!-- Title -->
+        <div class="title col-xs-12">
+            Shopping Cart
+        </div>
 
-    <!-- Products -->
-    <% _.each(items, function (item) { %>
-        <div class="item col-xs-12">
-            <div class="image col-xs-12 col-sm-3">
-                <img src="/images/<%=item.image%>" style="width:100%; height:100%"/>
+        <!-- Products -->
+        <% _.each(items, function (item) { %>
+            <div class="item col-xs-12">
+                <div class="image col-xs-12 col-sm-3">
+                    <img src="/images/<%=item.image%>" style="width:100%; height:100%"/>
+                </div>
+
+                <div class="description col-xs-12 col-sm-3">
+                    <span><%=item.name%></span>
+                </div>
+
+                <div class="quantity col-xs-12 col-sm-4">
+                    <button class="glyphicon glyphicon-plus" type="button" name="button">
+                    </button>
+                    <input type="text" name="name" value="<%= item.quantity %>" />
+                    <button class="glyphicon glyphicon-minus" type="button" name="button">
+                    </button>
+                </div>
+
+                <div class="total-price col-xs-12 col-sm-1">$<%=item.price%></div>
+
+                <div class="buttons col-xs-12 col-sm-1">
+                    <span class="glyphicon glyphicon-remove" style="margin-top:-2px"></span>
+                </div>
             </div>
+        <% }) %>
 
-            <div class="description col-xs-12 col-sm-3">
-                <span><%=item.name%></span>
-            </div>
-
-            <div class="quantity col-xs-12 col-sm-4">
-                <button class="glyphicon glyphicon-plus" type="button" name="button">
+        <div style="margin:10px">
+            <a href="/checkout" style="color:white">
+                <button class="btn btn-primary add-to-cart">
+                    <span class="">Checkout</span>
                 </button>
-                <input type="text" name="name" value="<%= item.quantity %>" />
-                <button class="glyphicon glyphicon-minus" type="button" name="button">
-                </button>
-
-            </div>
-
-            <div class="total-price col-xs-12 col-sm-1">$<%=item.price%></div>
-
-            <div class="buttons col-xs-12 col-sm-1">
-                <span class="glyphicon glyphicon-remove" style="margin-top:-2px"></span>
-            </div>
-      </div>
-    <% }) %>
-
-
-    <div style="margin:10px">
-        <a href="/checkout" style="color:white">
-            <button class="btn btn-primary add-to-cart">
-
-                <span class="">Checkout</span>
-
-        </button>
-        </a>
+            </a>
+        </div>
     </div>
-</div>
 </div>

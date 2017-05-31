@@ -1,47 +1,31 @@
-/**
- * MenuController
- *
- * @description :: Server-side logic for managing menus
- * @help        :: See http://sailsjs.org/#!/documentation/concepts/Controllers
- */
-
 module.exports = {
 
-  /**
-   * `MenuController.create()`
-   */
-  create: function (req, res) {
-    return res.json({
-      todo: 'create() is not implemented yet!'
-    });
-  },
+    create: function (req, res) {
+        Menu.create({
+            name: req.param('name'),
+            image: req.param('image'),
+            price: req.param('price')
+        }).exec(function(err, menu) {});
+    },
 
-  /**
-   * `MenuController.get()`
-   */
-  get: function (req, res) {
-	  Menu.find().exec(function(err, allItems) {
-		  return res.json({
-			items: allItems
-		  });
-	  });
-  },
+    get: function (req, res) {
+	    Menu.find().exec(function(err, allItems) {
+		    return res.view('menupage', {
+                items: allItems
+            });
+	    });
+    },
 
-  /**
-   * `MenuController.update()`
-   */
-  update: function (req, res) {
-    return res.json({
-      todo: 'update() is not implemented yet!'
-    });
-  },
+    update: function (req, res) {
+        return res.json({
+            todo: 'update() is not implemented yet!'
+        });
+    },
 
-  /**
-   * `MenuController.delete()`
-   */
-  delete: function (req, res) {
-    return res.json({
-      todo: 'delete() is not implemented yet!'
-    });
-  }
+    delete: function (req, res) {
+        return res.json({
+            todo: 'delete() is not implemented yet!'
+        });
+    }
+    
 };
