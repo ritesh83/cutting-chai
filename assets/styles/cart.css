@@ -107,8 +107,8 @@ body {
 }
 
 .quantity button {
-    height: 32px;
-
+    height: 25px;
+    color: black;
 }
 
 .quantity input {

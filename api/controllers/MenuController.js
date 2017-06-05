@@ -5,7 +5,9 @@ module.exports = {
             name: req.param('name'),
             image: req.param('image'),
             price: req.param('price')
-        }).exec(function(err, menu) {});
+        }).exec(function(err, menu) {
+            //
+        });
     },
 
     get: function (req, res) {
@@ -27,5 +29,5 @@ module.exports = {
             todo: 'delete() is not implemented yet!'
         });
     }
-    
+
 };

@@ -17,10 +17,18 @@
                 </div>
 
                 <div class="quantity col-xs-12 col-sm-4">
-                    <button class="glyphicon glyphicon-plus" type="button" name="button">
+                    <button class="glyphicon glyphicon-plus"
+                        type="button"
+                        name="button"
+                        onclick="updateQuantity('<%= item.id %>', 'increment')">
                     </button>
-                    <input type="text" name="name" value="<%= item.quantity %>" />
-                    <button class="glyphicon glyphicon-minus" type="button" name="button">
+                    <div style="display: inline-block; height: 45px; position: relative; top: -3px;">
+                        <input type="text" name="name" value="<%= item.quantity %>" />
+                    </div>
+                    <button class="glyphicon glyphicon-minus"
+                        type="button"
+                        name="button"
+                        onclick="updateQuantity('<%= item.id %>', 'decrement')">
                     </button>
                 </div>
 

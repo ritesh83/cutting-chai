@@ -1,5 +1,4 @@
-
-function submitForm() {
+submitForm => {
     Stripe.card.createToken(
         {
             number: $('.card-number').val(),
@@ -11,7 +10,7 @@ function submitForm() {
     );
 }
 
-function stripeResponseHandler(status, response) {
+stripeResponseHandler = (status, response) => {
     let $form = $('#payment-form');
 
     if (response.error) {

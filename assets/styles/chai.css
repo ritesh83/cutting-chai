@@ -71,13 +71,9 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 
 body {
-    /*background: url('/images/cutting-chai-2.jpg');*/
     color: #dbe1e6;
     font-family: fantasy;
-    /*background: linear-gradient(141deg, #1099da 0%, #76a8bf 51%, #2cb5e8 75%);*/
-
     background-image:url('/images/ice-cream-6-pack.jpg');
-
     background-size: cover;
 }
 
