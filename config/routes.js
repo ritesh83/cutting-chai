@@ -16,6 +16,8 @@ module.exports.routes = {
 
     '/update-quantity': 'CartController.updateQuantity',
 
+    '/remove-item': 'CartController.removeItem',
+
     'POST /api/menu': 'MenuController.create'
 
 };

@@ -18,3 +18,14 @@ updateQuantity = (id, action) => {
         }
     );
 }
+
+removeItem = (id) => {
+    $.post('/remove-item',
+        {
+            'item_id' : id
+        },
+        () => {
+            location.reload(true);
+        }
+    );
+}

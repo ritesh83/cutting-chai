@@ -54,6 +54,16 @@ module.exports = {
         return res.json({
             'message': 'success'
         });
+    },
+
+    removeItem(req, res) {
+        const itemId = req.param('item_id');
+
+        delete req.session.cart[itemId];
+
+        return res.json({
+            'message': 'success'
+        });
     }
 
 };
