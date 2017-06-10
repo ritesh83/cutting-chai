@@ -21,7 +21,8 @@ form {
 }
 
 .header {
-
+    background-image: url(/images/ice-cream-6-pack.jpg);
+    background-size: cover;
 }
 
 .header-jumbo {
@@ -30,6 +31,7 @@ form {
     background-color: #159957;
     background-image: linear-gradient(120deg,#155799,#189EA7);
     color: #fff;
+    margin-top: 80px;
 }
 
 .header-jumbo h1 {
@@ -41,10 +43,8 @@ form {
     float:left;
     margin: 10px 0px;
     font-size: 28px;
-    /*color: black;*/
-    border: solid 1px black;
+    border: solid 1px #ccc;
     border-radius: 50%;
-    /*background: linear-gradient(141deg, #e83c15 0%, #eabeb7 51%, #9a8fec 75%);*/
     background-color: #159957;
     background-image: linear-gradient(120deg,#155799,#189EA7);
     color: #fff;
@@ -62,6 +62,7 @@ a, a:hover, a:active, a:visited, a:focus {
     float:right;
     margin: 10px 0px;
     background-image: linear-gradient(120deg,#155799,#189EA7);
+    position: relative;
 }
 
 .header .cart-button span {
@@ -117,4 +118,39 @@ body {
 
 .menu-item-title {
     margin-top: 15px;
+}
+
+.header .cart-button span.button-badge {
+  background-color: #fa3e3e;
+  border-radius: 2px;
+  color: white;
+
+  padding: 1px 3px;
+
+  position: absolute; /* Position the badge within the relatively positioned button */
+
+  font-size: 15px;
+  left: -5px;
+  top: -5px;
+  width: 25px;
+  border-radius: 50%;
+  padding-top: 5px;
+}
+
+.view-menu {
+    color: #fff;
+    border-color: #2e6da4;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    opacity: 0.75;
+    height: 50px;
+    font-size: 20px;
+    line-height: 2.0em;
+    width: 200px;
+    background-image: linear-gradient(120deg,#155799,#189EA7);
+}
+
+.home-page-div {
+    margin-top: 25vh;
 }

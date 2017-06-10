@@ -4,7 +4,7 @@ module.exports.routes = {
         view: 'homepage'
     },
 
-    '/menu': 'MenuController.get',
+    '/menu': 'MenuController.getAll',
 
     '/checkout': {
         view: 'checkout'

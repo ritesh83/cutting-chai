@@ -10,24 +10,11 @@ module.exports = {
         });
     },
 
-    get: function (req, res) {
-	    Menu.find().exec(function(err, allItems) {
-		    return res.view('menupage', {
+    getAll: function (req, res) {
+        Menu.find().exec(function(err, allItems) {
+            return res.view('menupage', {
                 items: allItems
             });
 	    });
-    },
-
-    update: function (req, res) {
-        return res.json({
-            todo: 'update() is not implemented yet!'
-        });
-    },
-
-    delete: function (req, res) {
-        return res.json({
-            todo: 'delete() is not implemented yet!'
-        });
     }
-
 };

@@ -1,8 +1,8 @@
 addItemToCart = (id) => {
     $.post('/add-to-cart',
         {'id' : id},
-        (data) => {
-            console.log(data);
+        () => {
+            location.reload(true);
         }
     );
 }

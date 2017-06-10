@@ -1,7 +1,6 @@
 module.exports = {
 
     getAll(req, res) {
-
         if (req.session.cart) {
             let itemIds = Object.keys(req.session.cart);
 
