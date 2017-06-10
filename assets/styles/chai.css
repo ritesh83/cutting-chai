@@ -21,7 +21,7 @@ form {
 }
 
 .header {
-    background-image: url(/images/ice-cream-6-pack.jpg);
+    background-image: url(/images/Header-Art-01.jpg);
     background-size: cover;
 }
 
@@ -31,7 +31,7 @@ form {
     background-color: #159957;
     background-image: linear-gradient(120deg,#155799,#189EA7);
     color: #fff;
-    margin-top: 80px;
+    margin-top: 71px;
 }
 
 .header-jumbo h1 {
@@ -144,13 +144,14 @@ body {
     margin-right: auto;
     display:block;
     opacity: 0.75;
-    height: 50px;
-    font-size: 20px;
+    height: 57px;
+    font-size: 25px;
     line-height: 2.0em;
     width: 200px;
+    border-radius: 20px;
     background-image: linear-gradient(120deg,#155799,#189EA7);
 }
 
 .home-page-div {
-    margin-top: 25vh;
+    margin-top: 30vh;
 }
