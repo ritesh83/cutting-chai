@@ -50,6 +50,10 @@ module.exports = {
             req.session.cart[itemId] = req.session.cart[itemId] - 1;
         }
 
+        if (req.session.cart[itemId] === 0) {
+            delete req.session.cart[itemId];
+        }
+
         return res.json({
             'message': 'success'
         });

@@ -25,9 +25,12 @@
         </div>
         <button type="button" class="btn btn-default cart-button">
             <a href="/cart">
-                <% if (req.session.cart) { %>
-                    <span class="button-badge"><%=Object.keys(req.session.cart).length%></span>
-                <% } %>
+                <% if (req.session.cart) {
+                    var count = Object.keys(req.session.cart).length;
+                    if (count > 0) {
+                %>
+                    <span class="button-badge"><%=count%></span>
+                <% } } %>
                 <span class="glyphicon glyphicon-shopping-cart"></span>
             </a>
         </button>
