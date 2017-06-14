@@ -1,4 +1,4 @@
-submitForm => {
+submitForm = () => {
     Stripe.card.createToken(
         {
             number: $('.card-number').val(),

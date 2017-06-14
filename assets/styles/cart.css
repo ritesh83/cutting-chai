@@ -12,7 +12,7 @@ body {
 
 .shopping-cart {
   display: flex;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.75);
   flex-direction: column;
   margin: 25px 0px;
 }
