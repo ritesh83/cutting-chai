@@ -100,7 +100,6 @@ body {
 .menu-item {
     border: solid 1px gray;
     color: white;
-    margin-top: 15px;
     margin-bottom: 15px;
 }
 
@@ -159,13 +158,17 @@ body {
     margin-top: 50vh;
 }
 
+.header h1 {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+}
+
 @media (max-width: 480px) {
 
     .header h1 {
         text-align: center;
-        margin-left: 12px;
         font-size: 28px;
         margin-top: 27px;
-        width: 59%;
     }
 }
